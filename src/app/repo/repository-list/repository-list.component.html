@@ -1,0 +1,55 @@
+
+
+<div class="container bootstrap snippets bootdey">
+  
+  
+    <div class="row"  *ngFor="let data of data | paginate:{
+      itemsPerPage: 10,
+      currentPage: page, 
+      totalItems: count}; let i = index">
+        <div class="panel panel-default widget">
+            <div class="panel-heading">
+                <span class="glyphicon glyphicon-comment"></span>
+               
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xs-2 col-md-1">
+                                <img src="{{data.owner.avatar_url}}" class="img-circle img-responsive img-user"/></div>
+                            <div class="col-xs-10 col-md-11">
+                                <div>
+                                  <h4 class="log.des">{{data.owner.login}}</h4>
+                                  
+                                    <div class="mic-info">
+                                        {{data.description}}
+                                    </div>
+                                </div>
+                                <div class="comment-text">
+                                  <span class="star">{{data.stargazers_count | shortNumber}} stars</span> 
+                                  <span class="star">{{data.open_issues_count | shortNumber}} issues</span>
+                                  <span>{{data.created_at | dateAgo }} posted by {{data.owner.login}}</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    
+  <div>
+      <pagination-controls previousLabel="Prev"
+      nextLabel="Next"
+      (pageChange)="onTableDataChange($event)">
+          
+      </pagination-controls>
+  </div>
+
+
+  
+</div>

@@ -1,0 +1,60 @@
+body {
+    padding-top: 30px;
+    background: #eee;
+}
+.widget .panel-body {
+    padding: 0px;
+}
+.widget .list-group {
+    margin-bottom: 0;
+}
+.widget .panel-title {
+    display: inline;
+}
+.widget .label-info {
+    float: right;
+}
+.widget li.list-group-item {
+    border-radius: 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+.widget li.list-group-item:hover {
+    background-color: rgba(86, 61, 124, 0.1);
+}
+.widget .mic-info {
+    color: #666666;
+    font-size: 11px;
+}
+.widget .action {
+    margin-top: 5px;
+}
+.widget .comment-text {
+    font-size: 12px;
+}
+.widget .btn-block {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.img-user {
+    width: 100px;
+    height: 100px;
+    padding-right: 30px;
+}
+.mic-info{
+    padding-bottom: 10px;
+}
+.star {
+    position: static;
+    text-align: left;
+    border-width:1px;
+    border: solid;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.log.des{
+    padding-right: 10;
+}
